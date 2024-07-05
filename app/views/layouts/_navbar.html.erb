@@ -1,0 +1,16 @@
+<header>
+  <div class = "container" >
+    <nav>
+      <ul>
+        <li><%= link_to "Main Page", articles_path %>
+        <li><%= link_to "New Article", new_article_path %>
+        <li>
+        <% if user_signed_in? %>
+        <%= link_to "#{current_user.email}", edit_user_registration_path %>
+        <% else %>
+        <%= link_to "Sign up", new_user_registration_path %>
+        <%= link_to "Log in", new_user_session_path %>
+        <% end %>
+      </ul>
+    </nav>
+<header>
