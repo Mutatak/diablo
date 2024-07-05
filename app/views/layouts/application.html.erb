@@ -13,20 +13,17 @@
   </head>
 
   
-  <body class="min-h-screen bg-gray-100">
-    <main class="flex flex-col min-h-screen">
+  <body class= "prose mx-auto">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
 
         <% if user_signed_in? %>
           <%= link_to "Profile", edit_user_registration_path %>
-          <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+          <%= button_to "Log out", destroy_user_session_path, method: :delete , class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-red-500" %>
         <% else %>
-          <%= link_to "Sign up", new_user_registration_path %>
-          <%= link_to "Log in", new_user_session_path %>
+          <%= link_to "Sign up", new_user_registration_path, class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-green-300" %>
+          <%= link_to "Log in", new_user_session_path, class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-blue-300" %>
         <% end %>
-        
-        <br>
 
       <%= yield %>
     </div>
