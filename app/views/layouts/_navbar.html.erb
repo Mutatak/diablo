@@ -2,22 +2,22 @@
   <div class = "container" >
     <nav>
       <ul class="flex space-x-4 list-none">
-        <li><%= link_to "Main Page", articles_path %></li>
-        <li><%= link_to "New Article", new_article_path %></li>
+        <li><%= link_to "Main Page", articles_path, class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-gray-300"%></li>
+        <li><%= link_to "New Article", new_article_path, class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-gray-300"%></li>
         <% if user_signed_in? %>
         
         <li>
-        <%= link_to "#{current_user.email}", edit_user_registration_path %>
+        <%= link_to "#{current_user.email}", edit_user_registration_path, class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-gray-300" %>
         </li>
         <li>
-        <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+        <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-gray-300" %>
         </li>
         <% else %>
         <li>
-        <%= link_to "Sign up", new_user_registration_path %>
+        <%= link_to "Sign up", new_user_registration_path, class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-gray-300" %>
         </li>
         <li>
-        <%= link_to "Log in", new_user_session_path %>
+        <%= link_to "Log in", new_user_session_path, class: "bg-gray-200 px-1 py-0.25 rounded hover:bg-gray-300" %>
         </li>
         <% end %>
         </li>
