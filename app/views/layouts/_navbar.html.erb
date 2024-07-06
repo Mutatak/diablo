@@ -1,17 +1,26 @@
 <header>
   <div class = "container" >
     <nav>
-      <ul>
-        <li><%= link_to "Main Page", articles_path %>
-        <li><%= link_to "New Article", new_article_path %>
-        <li>
+      <ul class="flex space-x-4 list-none">
+        <li><%= link_to "Main Page", articles_path %></li>
+        <li><%= link_to "New Article", new_article_path %></li>
         <% if user_signed_in? %>
+        
+        <li>
         <%= link_to "#{current_user.email}", edit_user_registration_path %>
+        </li>
+        <li>
         <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+        </li>
         <% else %>
+        <li>
         <%= link_to "Sign up", new_user_registration_path %>
+        </li>
+        <li>
         <%= link_to "Log in", new_user_session_path %>
+        </li>
         <% end %>
+        </li>
       </ul>
     </nav>
   </div>
