@@ -11,9 +11,21 @@ module Visible
     def public_count
       where(status: 'public').count
     end
+
+    def private_count(current_user)
+      current_user.articles.where(status: 'private').count
+    end
   end
 
   def archived?
     status == 'archived'
+  end
+
+  def private?
+    status == 'private'
+  end
+
+  def public?
+    status == 'public'
   end
 end
