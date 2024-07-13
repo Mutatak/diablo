@@ -130,6 +130,11 @@ GEM
       childprocess (~> 5.0)
     letter_opener (1.10.0)
       launchy (>= 2.2, < 4)
+    letter_opener_web (3.0.0)
+      actionmailer (>= 6.1)
+      letter_opener (~> 1.9)
+      railties (>= 6.1)
+      rexml
     logger (1.6.0)
     loofah (2.22.0)
       crass (~> 1.0.2)
@@ -299,6 +304,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   letter_opener (~> 1.10)
+  letter_opener_web
   pg (~> 1.1)
   pry-rails
   puma (>= 5.0)
