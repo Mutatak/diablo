@@ -1,6 +1,5 @@
 <h1> <b>Articles</b> </h1> 
 
-
 Our blog has <%= Article.public_count %> published articles.
 
 <% if user_signed_in? %>
@@ -14,7 +13,7 @@ Our blog has <%= Article.public_count %> published articles.
 
 <ul>
   <% @articles.each do |article| %>
-    <% unless article.archived? %>
+    <% if article.public? || ( user_signed_in? && article.user_id == current_user.id ) %>
       <li>
         <%= link_to article.title, article %>
       </li>
