@@ -1,6 +1,6 @@
 <h1><%= content_tag(:strong, @article.title) %></h1>
 
-<p><%= @article.body %></p>
+<p><%= @article.content %></p>
 
 <ul>
       <% if user_signed_in? && @article.user_id == current_user.id %>
