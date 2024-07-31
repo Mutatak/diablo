@@ -1,3 +1,4 @@
+# Model for Article
 class Article < ApplicationRecord
   include Visible
 

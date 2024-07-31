@@ -1,6 +1,8 @@
+# This module is used to define the status of articles and comments.
 module Visible
   extend ActiveSupport::Concern
 
+  # Available statuses for articles and comments.
   VALID_STATUSES = ['public', 'private', 'archived']
 
   included do

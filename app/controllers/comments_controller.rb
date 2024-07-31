@@ -1,6 +1,9 @@
+# Controller for Comment model.
+# Contains the CRUD operations for the Comments model.
 class CommentsController < ApplicationController
   before_action :authenticate_user!
 
+  # Creates a new comment
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(comment_params)
@@ -9,6 +12,7 @@ class CommentsController < ApplicationController
     redirect_to article_path(@article)
   end
 
+  # Destroys a comment
   def destroy
     @article = Article.find(params[:article_id])
     @comment = @article.comments.find(params[:id])

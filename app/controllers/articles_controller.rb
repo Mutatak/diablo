@@ -1,20 +1,25 @@
+# Controller for the Article model.
+# Contains the CRUD operations for the Articles model.
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
+  # Shows all articles
   def index
     @articles = Article.all
   end
 
+  # Shows a single article
   def show
     @article = Article.find(params[:id])
   end
 
+  # Creates a new article
   def new
     @article = Article.new
   end
 
+  # Creates an article with the current user as the author
   def create
-
     @article = Article.new(article_params)
     @article.user = current_user
 
@@ -25,10 +30,12 @@ class ArticlesController < ApplicationController
     end
   end
 
+  # Edits an article
   def edit
     @article = Article.find(params[:id])
   end
 
+  # Updates an article
   def update
     @article = Article.find(params[:id])
 
@@ -39,6 +46,7 @@ class ArticlesController < ApplicationController
     end
   end
 
+  # Destroys an article
   def destroy
     @article = Article.find(params[:id])
     @article.destroy

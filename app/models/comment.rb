@@ -1,3 +1,4 @@
+# Model for Comment
 class Comment < ApplicationRecord
   include Visible
 
