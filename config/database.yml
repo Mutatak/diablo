@@ -24,7 +24,6 @@ development:
   database: diablo_development
   username: mutata
   password: <%= ENV["DIABLO_DATABASE_PASSWORD"] %>
-  host: localhost
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -61,7 +60,7 @@ test:
   database: diablo_test
   username: diablo
   password: <%= ENV["DIABLO_DATABASE_PASSWORD"] %>
-  host: localhost
+
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -88,4 +87,3 @@ production:
   database: diablo_production
   username: diablo
   password: <%= ENV["DIABLO_DATABASE_PASSWORD"] %>
-  host: localhost
