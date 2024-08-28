@@ -1,9 +1,6 @@
 name: Run Postman Tests
 
 on: 
-  commit:
-    branches:
-      - Postman-Integration
   push:
     branches: 
       - Postman-Integration
