@@ -1,42 +1,17 @@
-name: Postman API Tests
+name: Automated API tests using Postman CLI
 
-on:
-  push:
-    branches:
-      - Postman-Integration
-  workflow_call:
-    secrets:
-      TOKEN:  
-        description: 'Auth token for Postman API tests'
-        required: true 
+on: push
 
 jobs:
-  run-postman-tests:
+  automated-api-tests:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-
-      - name: Install Newman
-        run: npm install -g newman
-
-      - name: Run Postman tests
+      - uses: actions/checkout@v4
+      - name: Install Postman CLI
         run: |
-          newman run .github/workflows/postman_collection.json \
-            --environment .github/workflows/postman_environment.json \
-            --reporters cli,html \
-            --reporter-html-export results/action_test_report.html \
-            --globals "TOKEN=${{ secrets.TOKEN }}" 
-
-      # - name: Upload test report
-      #   uses: actions/upload-artifact@v2
-      #   if: always()
-      #   with:
-      #     name: postman-test-report
-      #     path: results/action_test_report.html
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+      - name: Run API tests
+        run: |
+          postman collection run "${{ github.workspace }}/postman/collections/System Tests.json" -e "35997120-e2884338-d473-4213-90b0-e117a4b88b40" --integration-id "167800-${{ github.run_id }}"
