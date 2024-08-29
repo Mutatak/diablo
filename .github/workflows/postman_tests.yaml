@@ -34,9 +34,9 @@ jobs:
             --reporter-html-export results/action_test_report.html \
             --globals "TOKEN=${{ secrets.TOKEN }}" 
 
-      - name: Upload test report
-        uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: postman-test-report
-          path: results/action_test_report.html
+      # - name: Upload test report
+      #   uses: actions/upload-artifact@v2
+      #   if: always()
+      #   with:
+      #     name: postman-test-report
+      #     path: results/action_test_report.html
