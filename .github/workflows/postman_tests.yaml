@@ -1,6 +1,14 @@
 name: Postman API Tests
 
 on:
+  push:
+    branches:
+      - Postman-Integration
+  pull:
+    branches:
+      - Postman-Integration
+      
+on:
   workflow_call:
     secrets:
       Token:  
