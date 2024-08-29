@@ -1,32 +1,39 @@
-name: Run Postman Tests
-#test commit
-on: 
+name: Postman API Tests
+
+on:
   push:
-    branches: 
-      - Postman-Integration
+    branches:
+      - Postman-Integrations
   pull_request:
     branches:
-      - Postman-Integration
+      - Postman-Integrations
 
 jobs:
   run-postman-tests:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Install Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
-    - name: Install Newman
-      run: npm install -g newman
+      - name: Install Newman
+        run: npm install -g newman
 
-    - name: Run Postman Tests
-      run: |
-        newman run .github/workflows/System Tests.postman_collection.json \
-        --environment .github/workflows/System Tests.postman_environment.json \
-        --reporters cli,junit \
-        --reporter-junit-export results.xml
+      - name: Run Postman tests
+        run: |
+          newman run collections/my-collection.json \
+            --environment environments/my-environment.json \
+            --reporters cli,html \
+            --reporter-html-export results/report.html
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: postman-test-report
+          path: results/
