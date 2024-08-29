@@ -36,4 +36,4 @@ jobs:
         if: always()
         with:
           name: postman-test-report
-          path: results/
+          path: results/actions/test-report
