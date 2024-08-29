@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - Postman-Integration
-  pull:
-    branches:
-      - Postman-Integration
   workflow_call:
     secrets:
       Token:  
