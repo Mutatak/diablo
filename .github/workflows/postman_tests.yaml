@@ -1,12 +1,11 @@
 name: Postman API Tests
 
 on:
-  push:
-    branches:
-      - Postman-Integration
-  pull_request:
-    branches:
-      - Postman-Integration
+  workflow_call:
+    secrets:
+      Token:  
+        description: 'Auth token for Postman API tests'
+        required: true 
 
 jobs:
   run-postman-tests:
@@ -29,11 +28,12 @@ jobs:
           newman run .github/workflows/postman_collection.json \
             --environment .github/workflows/postman_environment.json \
             --reporters cli,html \
-            --reporter-html-export results/report.html
+            --reporter-html-export results/action_test_report.html \
+            --globals "Token=${{ secrets.Token }}" 
 
       - name: Upload test report
         uses: actions/upload-artifact@v2
         if: always()
         with:
           name: postman-test-report
-          path: results/actions/test_report
+          path: results/action_test_report.html
