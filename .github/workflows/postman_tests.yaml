@@ -6,6 +6,8 @@ jobs:
   automated-api-tests:
     runs-on: ubuntu-latest
     steps:
+      - name: pre-commit
+        uses: pre-commit/action@v3.0.1
       - uses: actions/checkout@v4
       - name: Install Postman CLI
         run: |
@@ -15,5 +17,3 @@ jobs:
       - name: Run API tests
         run: |
           postman collection run "${{ github.workspace }}/postman/collections/SystemTests.json" -e "35997120-a458a860-1e2f-4adc-9415-5d59073d67cd" --integration-id "167800-${{ github.run_id }}"
-      - name: pre-commit
-        uses: pre-commit/action@v3.0.1
