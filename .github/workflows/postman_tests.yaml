@@ -12,8 +12,8 @@ jobs:
           curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
       - name: Login to Postman CLI
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
-      - name: pre-commit
-        uses: pre-commit/action@v3.0.1
       - name: Run API tests
         run: |
           postman collection run "${{ github.workspace }}/postman/collections/SystemTests.json" -e "35997120-a458a860-1e2f-4adc-9415-5d59073d67cd" --integration-id "167800-${{ github.run_id }}"
+      - name: pre-commit
+        uses: pre-commit/action@v3.0.1
