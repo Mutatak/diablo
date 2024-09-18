@@ -1,0 +1,7 @@
+<h1> Benzerlik Sonucu </h1>
+
+<% if @similarity_score.present? %>
+  <p> Benzerlik Skoru: <%= @similarity_score %></p>
+<% else %>
+  <p> Skor alınamadı. Lütfen tekrar deneyiniz.</p>
+<% end %>

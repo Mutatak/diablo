@@ -1,0 +1,17 @@
+<h1>Metin Anlamsal Benzerlik Kontrolü</h1>
+
+<%= form_with url: check_similarity_path, method: :post, local: true do |form| %>
+  <div>
+    <%= form.label :text1, "Birinci Metin" %><br>
+    <%= form.text_area :text1, rows: 3 %>
+  </div>
+
+  <div>
+    <%= form.label :text2, "İkinci Metin" %><br>
+    <%= form.text_area :text2, rows: 3 %>
+  </div>
+
+  <div>
+    <%= form.submit "Karşılaştır" %>
+  </div>
+<% end %>
