@@ -77,3 +77,7 @@ gem 'letter_opener_web'
 gem 'erd', group: :development
 
 gem "liquid-rails"
+
+gem "httparty"
+
+gem 'dotenv-rails', groups: [:development, :test]
