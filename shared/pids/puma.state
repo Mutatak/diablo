@@ -1,0 +1,5 @@
+---
+pid: 1312
+control_url: unix:///tmp/puma-status-1728127986125-1312
+control_auth_token: a17747de5561eaa98e61c1aa920656d4
+running_from: "/home/mutata/work/ruby/diablo"
