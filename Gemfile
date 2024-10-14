@@ -80,3 +80,5 @@ gem 'erd', group: :development
 gem "httparty"
 
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'sidekiq'

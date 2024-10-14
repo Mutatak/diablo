@@ -1,5 +1,5 @@
 ---
-pid: 92131
-control_url: unix:///tmp/puma-status-1728731674297-92131
-control_auth_token: e7941ce96c04a43a2913f94715a5a105
+pid: 15689
+control_url: unix:///tmp/puma-status-1728905046347-15689
+control_auth_token: 98bbc16ecc0a3a8646d2af8de783d0e6
 running_from: "/home/mutata/work/ruby/diablo"

@@ -1980,3 +1980,501 @@ Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 660
 === puma shutdown: 2024-10-12 14:54:38 +0300 ===
 - Goodbye!
 Exiting
+=== puma startup: 2024-10-12 15:34:04 +0300 ===
+Started GET "/sidekiq" for 127.0.0.1 at 2024-10-12 15:34:12 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+2024-10-12T12:34:12.831Z pid=136807 tid=3bjr INFO: Sidekiq 7.3.2 connecting to Redis with options {:size=>10, :pool_name=>"internal", :url=>nil}
+  
+RedisClient::CannotConnectError (Connection refused - connect(2) for 127.0.0.1:6379 (redis://localhost:6379)):
+  
+Started GET "/sidekiq" for 127.0.0.1 at 2024-10-12 16:08:36 +0300
+Started GET "/sidekiq/stylesheets/bootstrap.css" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/stylesheets/application.css" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/stylesheets/application-dark.css" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/javascripts/application.js" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/javascripts/dashboard.js" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/javascripts/chart.min.js" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/javascripts/chartjs-plugin-annotation.min.js" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/javascripts/base-charts.js" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/javascripts/dashboard-charts.js" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/images/status.png" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/sidekiq/images/favicon.ico" for 127.0.0.1 at 2024-10-12 16:08:37 +0300
+Started GET "/letter_opener" for 127.0.0.1 at 2024-10-12 16:08:41 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 8.2ms | Allocations: 1718)
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [11 times] (Duration: 19.5ms | Allocations: 12626)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 33.8ms | Allocations: 15368)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.4ms | Allocations: 89)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 3.3ms | Allocations: 629)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.5ms | Allocations: 166)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 8.3ms | Allocations: 1495)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 2.2ms | Allocations: 1913)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.5ms | Allocations: 311)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 5.3ms | Allocations: 2844)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 51.6ms | Allocations: 20628)
+Completed 200 OK in 69ms (Views: 54.6ms | ActiveRecord: 0.0ms | Allocations: 22865)
+
+
+Started GET "/letter_opener/1728734032_2553966_ffcb240/rich" for 127.0.0.1 at 2024-10-12 16:08:41 +0300
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1728734032_2553966_ffcb240", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 709)
+
+
+Started POST "/letter_opener/clear" for 127.0.0.1 at 2024-10-12 16:08:44 +0300
+Processing by LetterOpenerWeb::LettersController#clear as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/letter_opener/
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms | Allocations: 972)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:44 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 14)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 1.2ms | Allocations: 230)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.6ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 3.1ms | Allocations: 1004)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1241)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:48 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.9ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.9ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.5ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 3.5ms | Allocations: 986)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 1228)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:50 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.7ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.7ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.6ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 3.5ms | Allocations: 971)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 1213)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:51 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 5.0ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.7ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 7.0ms | Allocations: 999)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 1239)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:51 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.4ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.6ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.3ms | Allocations: 986)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1226)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:51 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.4ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.7ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.4ms | Allocations: 989)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1229)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:51 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.5ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.5ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.6ms | Allocations: 992)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1232)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:52 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.5ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.8ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.7ms | Allocations: 977)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1217)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:52 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.5ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.8ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.7ms | Allocations: 983)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1223)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:52 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.5ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.8ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.5ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.6ms | Allocations: 989)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1229)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:52 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.7ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.7ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 3.2ms | Allocations: 990)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 1230)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:08:52 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.7ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 1.9ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.0ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.4ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.8ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 8.0ms | Allocations: 998)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 1238)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:09:00 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.9ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 1.2ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 8.3ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 12.0ms | Allocations: 986)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 1226)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:09:00 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.5ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.6ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.5ms | Allocations: 1013)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1253)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:09:00 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.8ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.7ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.4ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 3.1ms | Allocations: 992)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 1232)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:09:01 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.6ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.6ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.5ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.7ms | Allocations: 980)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1220)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:09:01 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.8ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 1.6ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.7ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 4.7ms | Allocations: 989)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1229)
+
+
+Started GET "/sidekiq" for 127.0.0.1 at 2024-10-12 16:09:14 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:14 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:19 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:24 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:29 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:34 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:40 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:44 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:50 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:09:54 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:10:00 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:10:04 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:10:10 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:10:14 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:10:20 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:10:24 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:10:30 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:10:34 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:11:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:12:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:13:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:14:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:15:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:16:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:16:46 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:16:49 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:16:54 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:16:59 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:04 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:09 +0300
+Started GET "/sidekiq/queues" for 127.0.0.1 at 2024-10-12 16:17:10 +0300
+Started GET "/sidekiq/scheduled" for 127.0.0.1 at 2024-10-12 16:17:15 +0300
+Started GET "/sidekiq/queues" for 127.0.0.1 at 2024-10-12 16:17:17 +0300
+Started GET "/sidekiq/busy" for 127.0.0.1 at 2024-10-12 16:17:17 +0300
+Started GET "/sidekiq/" for 127.0.0.1 at 2024-10-12 16:17:18 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:18 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:29 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:35 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:39 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:45 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:49 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:55 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:17:59 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:18:05 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:18:09 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:18:15 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:18:19 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:18:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:19:25 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:19:55 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:19:59 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:04 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:10 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:14 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:20 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:24 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:30 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:34 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:40 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:44 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:50 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:20:54 +0300
+Started GET "/sidekiq/stats" for 127.0.0.1 at 2024-10-12 16:21:14 +0300
+Started GET "/letter_opener" for 127.0.0.1 at 2024-10-12 16:21:17 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.3ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 3.2ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.4ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 1.8ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.3ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 1.2ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 9.9ms | Allocations: 992)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 1230)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:21:19 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 0.7ms | Allocations: 222)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 1.0ms | Allocations: 201)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.7ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 4.4ms | Allocations: 983)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1224)
+
+
+Started GET "/letter_opener/" for 127.0.0.1 at 2024-10-12 16:21:33 +0300
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 3.2ms | Allocations: 1130)
+  Rendered collection of /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/_item.html.erb [3 times] (Duration: 4.6ms | Allocations: 3383)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 9.0ms | Allocations: 4910)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 1.3ms | Allocations: 200)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.1ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.7ms | Allocations: 146)
+  Rendered layout /home/mutata/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/letter_opener_web-3.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 12.7ms | Allocations: 5670)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 5942)
+
+
+Started GET "/letter_opener/1728739290_0726488_fc09975/rich" for 127.0.0.1 at 2024-10-12 16:21:33 +0300
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1728739290_0726488_fc09975", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 560)
+
+
+Started GET "/letter_opener/1728739290_0726488_fc09975/rich" for 127.0.0.1 at 2024-10-12 16:21:33 +0300
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1728739290_0726488_fc09975", "style"=>"rich"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 560)
+
+
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2024-10-12 16:47:44 +0300 ===
+- Goodbye!
+Exiting
+=== puma startup: 2024-10-14 14:10:27 +0300 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2024-10-14 14:18:59 +0300 ===
+- Goodbye!
+Exiting
+=== puma startup: 2024-10-14 14:19:55 +0300 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2024-10-14 14:20:02 +0300 ===
+- Goodbye!
+Exiting
+=== puma startup: 2024-10-14 14:21:11 +0300 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2024-10-14 14:22:25 +0300 ===
+- Goodbye!
+Exiting
+=== puma startup: 2024-10-14 14:24:06 +0300 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2024-10-14 14:24:08 +0300 ===
+- Goodbye!
+Exiting
