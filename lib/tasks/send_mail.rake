@@ -1,4 +1,4 @@
-namespace :maintenance do
+namespace :send_mail do
   desc "Send maintenance notification email to users"
   task notify: :environment do
 
@@ -31,5 +31,14 @@ namespace :maintenance do
         puts "Email sent: #{user.email}"
       end
     end
+  end
+
+  desc "Send confirm status for users in Excel file to admin"
+  task report: :environment do
+    # Generate Excel file
+    file_path = ExportService.generate_excel
+
+    # Send email with Excel file
+    UserMailer.send_excel_file(file_path).deliver_now
   end
 end
