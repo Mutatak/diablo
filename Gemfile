@@ -82,3 +82,5 @@ gem "httparty"
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'sidekiq'
+
+gem 'axlsx'
