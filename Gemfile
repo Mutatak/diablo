@@ -76,7 +76,6 @@ gem 'letter_opener_web'
 
 gem 'erd', group: :development
 
-
 gem "httparty"
 
 gem 'dotenv-rails', groups: [:development, :test]
@@ -84,3 +83,5 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'sidekiq'
 
 gem 'caxlsx'
+
+gem 'whenever', require: false
